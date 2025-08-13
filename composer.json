@@ -1,0 +1,45 @@
+{
+    "name": "xinningsu/thinkphp-filesystem-baidu-bos",
+    "description": "Baidu BOS storage for ThinkPHP, 百度对象存储作为ThinkPHP文件存储。",
+    "keywords": [
+        "thinkphp",
+        "filesystem",
+        "thinkphp storage",
+        "thinkphp filesystem",
+        "filesystem baidu bos",
+        "baidu",
+        "bos",
+        "baidu bos",
+        "baidu object storage",
+        "百度",
+        "对象存储",
+        "百度对象存储"
+    ],
+    "homepage": "https://github.com/xinningsu/thinkphp-filesystem-baidu-bos",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Su",
+            "email": "deng5765@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "topthink/think-filesystem": "^3.0.0",
+        "xinningsu/thinkphp-filesystem-baidu-bos": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\filesystem\\driver\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    }
+}
