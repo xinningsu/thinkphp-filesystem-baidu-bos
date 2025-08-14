@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace think\filesystem\driver;
 
 use League\Flysystem\FilesystemAdapter;
-use think\filesystem\Driver;
 use Sulao\BaiduBos\Client;
 use Sulao\Flysystem\BaiduBos\BaiduBosAdapter;
+use think\filesystem\Driver;
 
 class Bos extends Driver
 {

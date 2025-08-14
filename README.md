@@ -16,7 +16,7 @@ composer require xinningsu/thinkphp-filesystem-baidu-bos
 
 # 配置
 
-在 `config/filesystems.php` 中添加配置：
+在 `config/filesystem.php` 中添加配置：
 
 ```php
 return [
