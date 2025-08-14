@@ -6,7 +6,6 @@ Baidu BOS storage for ThinkPHP, 百度对象存储作为ThinkPHP文件存储。
 [![Code Coverage](https://scrutinizer-ci.com/g/xinningsu/thinkphp-filesystem-baidu-bos/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/xinningsu/thinkphp-filesystem-baidu-bos/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/xinningsu/thinkphp-filesystem-baidu-bos/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/xinningsu/thinkphp-filesystem-baidu-bos)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/xinningsu/thinkphp-filesystem-baidu-bos/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/g/xinningsu/thinkphp-filesystem-baidu-bos)
-[![Maintainability](https://api.codeclimate.com/v1/badges/b0634900a667b22fb5cb/maintainability)](https://codeclimate.com/github/xinningsu/thinkphp-filesystem-baidu-bos/maintainability)
 
 # 安装
 
@@ -22,17 +21,17 @@ composer require xinningsu/thinkphp-filesystem-baidu-bos
 ```php
 return [
     // 默认磁盘
-    'default' => 'bos', // 默认使用百度对象存储
+    'default' => 'bos', // 默认使用百度对象存储，或操作时指定 Filesystem::disk('bos')
     // 磁盘列表
     'disks'   => [
         // ...
         // 百度对象存储
         'bos' => [
             'type'       => 'bos',
-            'access_key' => 'your_access_key', // 或者使用 getenv('BOS_ACCESS') 获取环境变量
-            'secret_key' => 'your_secret_key', // 或者使用 getenv('BOS_SECRET') 获取环境变量
-            'region'     => 'your_region', // 存储区域，如 'bj'、'sh'、'gz' 等
-            'bucket'     => 'your_bucket', // 存储空间名称
+            'access_key' => 'your_access_key',
+            'secret_key' => 'your_secret_key',
+            'region'     => 'your_region',
+            'bucket'     => 'your_bucket',
         ],
         // ...
     ],
@@ -113,6 +112,7 @@ $lists = Filesystem::listContents('test/', true);
 
 # Reference
 
+- [https://github.com/xinningsu/flysystem-baidu-bos](https://github.com/xinningsu/flysystem-baidu-bos)
 - [https://github.com/thephpleague/flysystem](https://github.com/thephpleague/flysystem)
 - [https://github.com/xinningsu/baidu-bos](https://github.com/xinningsu/baidu-bos)
 - [https://cloud.baidu.com/doc/BOS/index.html](https://cloud.baidu.com/doc/BOS/index.html)
